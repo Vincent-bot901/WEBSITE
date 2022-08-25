@@ -1,0 +1,130 @@
+
+/* IMAGE CONTAINER */
+
+.img-cont{
+  width: 200px;
+  height: 150px;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
+
+/*Containers */ 
+
+.Small-container {
+  width: 10000px;
+  height: 290px;
+  position: relative;
+  margin: 10px;
+}
+
+.flex-container {
+  display: flex;
+  background: #FFEED8;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.flex-container > div {
+  margin-left: 15px;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+.flex-container-2 {
+  display: flex;
+  border-radius: 30px;
+}
+
+.flex-container-2 > div {
+  margin-left: 15px;
+  margin-top: 0px;
+  font-size: 30px;
+}
+
+#Container-1 {
+  background: #FFEED8;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid black;
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.other-text{
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Andale Mono, monospace;
+}
+
+.Container-text{ 
+  text-align: center;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Andale Mono, monospace;
+ }
+
+
+/* BUTTON*/ 
+
+.div-button {
+  margin: auto;
+}
+
+/* Nav Bar CSS*/
+ul {
+  list-style: none;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #FFEED8;
+  border-radius: 30px;
+  font-family: Andale Mono, monospace;
+  font-weight: bold;
+  border: 1px solid black;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:  #AD7D39;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+li a:hover {
+  background-color: #111;
+  border-radius: 30px;
+}
+
+body {
+  background-color: #AD7D39;
+}
+
+.Center {
+	text-align: center;
+}
+
+/* For at center videoen*/
+.Video-center {
+  margin: auto;
+  display: block;
+  border: 1px solid black;
+  border-radius: 30px;
+}
