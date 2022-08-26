@@ -1,13 +1,18 @@
 
-
 function Button() {
 	console.log("hello");
 }
-
+///  myGameArea.start();
 
 function startGame() {
-  myGameArea.start();
+  var audio = new Audio('Audio/Ball.mp3');
+  audio.play();
 }
+///while (true) {
+	///var audio = new Audio('Audio/Ball.mp3');
+	///audio.play();
+///}
+
 
 var myGameArea = {
   canvas : document.createElement("canvas"),
