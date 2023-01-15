@@ -44,6 +44,17 @@
 	<div class="Small-container">
 	<pre>
 	  <code>
+
+import time
+from datetime import datetime
+import reverse_geocoder
+from orbit import ISS
+from picamera import PiCamera
+from pathlib import Path
+
+cam = PiCamera()
+cam.resolution = (1296,972)
+
 	  	#Take the picture
 def capture(var, cam):
     curr_time = time.strftime(" %m-%d-%H", time.localtime())
