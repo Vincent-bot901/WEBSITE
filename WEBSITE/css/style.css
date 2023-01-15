@@ -16,6 +16,12 @@ pre code {
   margin: 10px;
 }
 
+.Small-container2 {
+  width: 500px;
+  height: 290px;
+  position: relative;
+  margin-top: 30px;
+}
 /* IMAGE CONTAINER */
 .img-cont{
   width: 200px;
