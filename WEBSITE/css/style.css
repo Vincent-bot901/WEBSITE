@@ -26,10 +26,8 @@ pre code {
 
 .Small-container2 {
   width: 500px;
-  height: 290px;
-  position: relative;
-  margin-top:40px;
-  padding: 20px;
+  height: 250px;
+  position: fixed;
 }
 /* IMAGE CONTAINER */
 .img-cont{
