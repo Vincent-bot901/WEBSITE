@@ -79,8 +79,14 @@ pre code {
   background: #FFEED8;
   border-radius: 30px;
   border: 1px solid black;
-  margin-top: 20px;
 }
+
+.flex-container2 > div {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
 .flex-container > div {
   margin-left: 15px;
   margin-top: 0px;
