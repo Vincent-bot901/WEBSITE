@@ -17,6 +17,13 @@ pre code {
 }
 
 .Small-container2 {
+  width: 10000px;
+  height: 290px;
+  position: relative;
+  margin: 10px;
+}
+
+.Small-container2 {
   width: 500px;
   height: 290px;
   position: relative;
