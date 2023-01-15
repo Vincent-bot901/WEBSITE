@@ -74,6 +74,13 @@ pre code {
   border: 1px solid black;
 }
 
+.flex-container2 {
+  display: flex;
+  background: #FFEED8;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
 .flex-container > div {
   margin-left: 15px;
   margin-top: 0px;
