@@ -88,8 +88,6 @@ function COLL() {
   if (score > SpeedMin) {
     speed += 30;
     SpeedMin *= 2;
-    Num = Math.random() * 5
-    ctx.fillStyle = List[Num];
   }
 }
 function DEAD() {
@@ -98,7 +96,6 @@ function DEAD() {
   yPos = Math.random() * 400
   score = 0
   speed = 20
-  ctx.fillStyle = "green";
   }
 // Animate the stick figure 
 function animate() { 
