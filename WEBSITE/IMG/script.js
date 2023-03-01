@@ -9,7 +9,6 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 var xPos = 100; 
 var yPos = 200; 
 
-const List = ["red","blue","green","pink","yellow", "purple"] 
 
 // speed
 
@@ -90,7 +89,6 @@ function COLL() {
 
 function DEAD() {
  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  alert("You DIED");
   xPos = Math.random() * 400
   yPos = Math.random() * 400
   score = 0
