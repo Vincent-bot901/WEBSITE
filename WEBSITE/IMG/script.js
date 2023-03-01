@@ -111,7 +111,7 @@ function animate() {
 document.onkeydown = function(event) { 
   switch (event.keyCode) { 
 
-    case 37: // Left arrow 
+    case 65: // Left arrow 
       if (xPos <= 20) {
         xPos -= 0 ;
         break;
@@ -123,7 +123,7 @@ document.onkeydown = function(event) {
 
     
      
-    case 39: // Right arrow 
+    case 68: // Right arrow 
       if (xPos >= 480) {
         xPos -= 0 ;
         break; 
@@ -133,7 +133,7 @@ document.onkeydown = function(event) {
         break; 
       }
   
-  case 38: // Up arrow
+  case 87: // Up arrow
       if (yPos <= 20) {
         yPos += 0 ;
         break;
@@ -142,7 +142,7 @@ document.onkeydown = function(event) {
         yPos -= 20;
         break;
       }
-    case 40: // Down arrow 
+    case 83: // Down arrow 
        if (yPos >= 480) {
         yPos += 0 ;
         break;
