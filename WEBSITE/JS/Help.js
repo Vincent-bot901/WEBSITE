@@ -1,7 +1,9 @@
 
 
-var vid = document.getElementById("myVideo"); 
+var Down = document.getElementById("Down");
+var Beast = document.getElementById("Beast"); 
 
 function playVid() { 
-  vid.play(); 
+  Down.play();
+  Beast.play()
 } 
