@@ -4,7 +4,7 @@ var Down = document.getElementById("Down");
 var Beast = document.getElementById("Beast"); 
 
 function playVid() {
-  while (condition) {
+  while (true) {
   Down.play();
   Beast.play()
   }
