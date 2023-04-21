@@ -17,6 +17,10 @@ function ny() {
   document.getElementById('myImage').src = pic;
 }
 
+function myFunction() {
+  document.getElementById("frm1").submit();
+}
+ 
 function valgte(){
   console.log(x);
   console.log(FN);
