@@ -9,10 +9,8 @@
   
 
 function ny() {
-  var pic;
   x = Math.floor(Math.random()*4+1);
   genererTekst(x);
-  pic = "https://github.com/mpsteenstrup/GCP4/blob/master/FN_maal/FN"+x+".jpg?raw=true"  
   document.getElementById('Options').innerHTML = Options;
   document.getElementById('Youtube').src = Song;
 }
