@@ -5,6 +5,8 @@
   let listeMedValgte = [];
   let data;
   var Options = null
+  var Song = null
+  
 
 function ny() {
   var pic;
@@ -29,7 +31,8 @@ function valgte(){
 function genererTekst(x){
   for (var i = 0; i < data.length; i++) {
       if (data[i]["ID"] == x) {
-        Options = data[i]['Options']; 
+        Options = data[i]['Options'];
+        Song = data[i]['Link'];
         break; // exit efter loop
       }
     }
