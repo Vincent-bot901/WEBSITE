@@ -14,7 +14,7 @@ function ny() {
   genererTekst(x);
   pic = "https://github.com/mpsteenstrup/GCP4/blob/master/FN_maal/FN"+x+".jpg?raw=true"  
   document.getElementById('Options').innerHTML = Options;
-  document.getElementById('myImage').src = pic;
+  document.getElementById('Youtube').src = Song;
 }
 
 function myFunction() {
