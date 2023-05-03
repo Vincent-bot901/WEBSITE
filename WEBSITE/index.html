@@ -1,57 +1,113 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<link rel="stylesheet" href="css/style.css"/>
-<script src="JS/help.js"></script>
-<meta charset="utf-8">
-<body onload="playVid()">
 <html>
-
-<header>
-<title>VINCENTS WEBSITE</title>
-
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="Kode.html">Kode</a></li>
-  <li><a href="Flappy.html">Button</a></li>
-  <li><a href="Portfolie.html">Astro Pi</a></li>
-  <li><a href="home.html">Game</a></li>
-</ul>
-
-</header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
 <body>
+<h1>SONG</h1>
+<p id="overskrift"></p>
+<iframe id="Youtube" width="560" height="315" src="https://www.youtube.com/watch?v=ylyaQ2KJW6c&t=37s&ab_channel=People" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<div class="flex-container">
-  <div>
-  	<p class="Container-text"> Hej Jeg hedder Vincent Varga.</p>
-	<img src="Image/sitck.gif" class="img-cont"alt="stick">
-  </div>
-  <div class="Small-container">
-  	<p class="Center"> Hvad går jeg og laver?</p>
-  	<p class="other-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-  </div>
-</div>
+<p id="beskrivelse"></p>
+<p id="progression"></p>
+<button type="button" onclick="ny()">ny</button>
+<p>Der er 20 valgmuligheder af kunstnere med tilsvarende numre, 4 til hvert spørgsmål, de første 4 til første spørgsmål, de næste 4 til andet spørgsmål osv. Indsæt det nummer i tekstfeltet, som du tror passer. <br>Jason Derulo=1. No Juice=2. The Weeknd=3. XXXTentacion=4.<br> A$ap Rocky=5. Kusorare=6. Drake=7. Swae Lee=8.<br> Bruce Willis=9. Vin Diesel=10. Dom Toretto=11. Mark Wahlberg=12.<br> Destroy Lonely=13. Ski Mask the Slump God=14. Ben 10=15. Moxy=16. <br>The Stone=17. Marks Mor=18. The Rock=19. The Boulder=20. <br> Kanye West=21. JAY-Z=22. J. Cole=23. Eminem=24.<br> Pusha T=25. Frank Ocean=26. Kendrick Lamar=27. Lauryn Hill=28.<br> Rodrigo Amarante=29. Manu Chao=30. Luis Fonsi=31. Frank Sinatra=32.</p>
+<p>Who is it?</p>
 
-<div>
-<div class="flex-container-2"> 
-	<div id="Container-1">
-	<h1 class="Center">Watch the video!</h1>
-	<video id="Down" class="Video-center" width="500" height="400" autoplay>
- 	 <source src="Video/Down.mp4" type="video/mp4">
-  	Your browser does not support the video tag.
-	</video>
-	</div>
-	<div id="Container-1">
-	<h1 id="Beast" class="Center">Watch the video!</h1>
-	<video class="Video-center" width="500" height="400" autoplay>
- 	 <source src="Video/Beast.mp4" type="video/mp4">
-  	Your browser does not support the video tag.
-	</video>
-	</div>
+<input id="numb">
 
+<button type="button" onclick="Tjek()">Submit</button>
 
-</div>
-</div>
+<p id="demo"></p>
+
+<p id="point"></p>
+
 </body>
 </html>
+
+<script>
+  let score;
+  let x;
+  let listeMedValgte = [];
+  let data;
+  var Link = null
+  var ID = null
+  var Navn = null
+  let f;
+  let point;
+  let test;
+  point = 0
+  test = 0
+  x = 0
+
+function ny() {
+  var pic;
+  x++
+  console.log(x);
+  genererLink(x);
+  pic = Link
+  document.getElementById('Youtube').src = pic;
+}
+
+function Tjek() {
+	f = document.getElementById("numb").value;
+console.log(f)
+  if (ID == f){
+		point++
+		document.getElementById('point').innerHTML = "Your points: " + point;
+	}
+
+  if (Nummer*2<=point) {
+    point = 0
+    document.getElementById('point').innerHTML =  "192.168. 0.1, this u? If so dont sleep tonight and dont ever cheat again";
+  }
+
+  if (point==8) {
+    document.getElementById('point').innerHTML = "YOU WON"
+  }
+
+  if (point==9) {
+    document.getElementById('point').innerHTML = "BROTHER YOU HAVE WON STOP"
+  }
+  if (point==10) {
+    document.getElementById('point').innerHTML = "YOUR MOM A HOE"
+  }
+  if (point==11) {
+    document.getElementById('point').innerHTML = "STOP G"
+  }
+  if (point==12) {
+    document.getElementById('point').innerHTML = "THIS Your MOM G? https://www.facebook.com/photo?fbid=10159852237481692&set=a.438412531691"
+  }
+  if (point==12) {
+    document.getElementById('point').innerHTML = "Still hit tho"
+  }
+  if (f!==ID) {
+    document.getElementById('point').innerHTML = "YOU LOST";
+    point = 0
+  }
+}
+
+function genererLink(x){
+	console.log(data.length)
+  for (var i = 0; i < data.length; i++) {
+      if (data[i]["Nr"] == x) {
+		console.log("nice")
+        Link = data[i]['Link']; 
+        ID = data[i]['ID'];
+        Nummer = data[i]['Nr'];
+ 
+        break; // exit efter loop
+      }
+    }
+}
+window.onload = function() {
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "SHEET.csv", true);
+xhr.responseType = "text";
+xhr.onload = function() {
+  data = Papa.parse(xhr.responseText, {
+    header: true // set this to true if the first row contains the header names
+  }).data;
+};
+xhr.send();
+}
+</script>
